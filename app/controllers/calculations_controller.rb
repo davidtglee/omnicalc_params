@@ -17,4 +17,14 @@ end
       @payment=@interest*@principle/(1-(1+@principle)**(-@years))
   render("calculations/flex_payment.html.erb")
 end
+def square_form
+  render("calculations/square_form.html.erb")
+end
+
+def square
+  @user_number=params[:user_number].to_f
+  @squared_number=@user_number**2
+  render("calculations/square.html.erb")
+end
+
 end
