@@ -1,23 +1,29 @@
-<h1> Payment Calculations</h1>
+<h1>Payment Calculations</h1>
 
 <form action="http://localhost:3000/payment/results">
   <div>
-    <label for="user_year">
+
+    <label for="rate">
+      APR
+    </label>
+
+    <input id="rate" type="text" name="user_rate" placeholder="Enter your desired APR">
+  </div>
+  <div>
+
+    <label for="years">
       Number of years
-</label>
-<input type="text" id="user_year" name="user_year">
-</div>
-<div>
-<label for="user_interest">
-  APR
-</label>
-<input type="text" id="user_interest" name="user_interest">
-</div>
-<div>
-<label for="user_principle">
-  Principal
-</label>
-<input type="text" id="user_principle" name="user_principle">
-</div>
-<button>Calculate monthly payment</button>
+    </label>
+
+    <input id="years" type="text" name="user_years" placeholder="Enter the amount of years">
+  </div>
+  <div>
+
+    <label for="principal">
+      Principal
+    </label>
+
+    <input id="principal" type="text" name="user_principal" placeholder="Enter the principal">
+  </div>
+  <button>Calculate monthly payment</button>
 </form>
