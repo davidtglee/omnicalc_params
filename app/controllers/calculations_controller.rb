@@ -24,7 +24,7 @@ def square_form
 end
 
 def square
-  @user_number=params[:user_number].to_f
+  @user_number=params[:user1_number].to_f
   @squared_number=@user_number**2
   render("calculations/square.html.erb")
 end
@@ -34,7 +34,7 @@ def square_root_form
 end
 
 def square_root
-  @user_number=params[:users_number].to_f
+  @user_number=params[:user2_number].to_f
   @sqrt_number=Math.sqrt(@user_number)
   render("calculations/square_root.html.erb")
 end
